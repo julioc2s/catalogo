@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfumes XPTO - Catálogo de Produtos</title>
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['"Playfair Display"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            amber: {
+              400: '#fbbf24',
+              500: '#f59e0b',
+              600: '#d97706',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @media print {
+      .no-print { display: none !important; }
+      body { background-color: white !important; }
+      .product-card { break-inside: avoid; page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body class="bg-stone-50 font-sans text-stone-800 min-h-screen flex flex-col justify-between antialiased selection:bg-amber-100 selection:text-amber-900">
+
+  <!-- CABEÇALHO (HEADER) -->
+  <header class="bg-gradient-to-b from-stone-950 via-stone-900 to-stone-950 text-stone-100 shadow-xl border-b border-amber-600/30">
+    <div class="max-w-5xl mx-auto px-6 py-10 text-center space-y-3">
+      <div class="inline-block p-2 rounded-full bg-amber-500/10 mb-1 border border-amber-500/20">
+        <svg class="w-8 h-8 text-amber-400 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+        </svg>
+      </div>
+      
+      <h1 class="font-serif text-4xl sm:text-6xl font-bold tracking-wide text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-amber-400 to-amber-200">
+        Perfumes XPTO
+      </h1>
+      
+      <p class="text-lg sm:text-xl font-light text-amber-100/90 tracking-wide font-serif italic">
+        A melhor linha de perfumes nacionais e importados
+      </p>
+      
+      <p class="text-xs sm:text-sm text-stone-400 max-w-xl mx-auto italic font-light">
+        Perfumes com sfgsdf df dfdsfsdf dfd dfdfdds dfdfd
+      </p>
+      
+      <div class="pt-4 flex flex-wrap justify-center items-center gap-4 text-xs sm:text-sm text-stone-300 border-t border-stone-800/80 mt-6 max-w-md mx-auto">
+        <span class="flex items-center gap-2 bg-stone-800/50 px-3 py-1.5 rounded-full border border-stone-700/50">
+          <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h32a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2V5zM3 12a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2zM3 19a2 2 0 012-2h12a2 2 0 012 2v2a2 2 0 01-2 2H5a2 2 0 01-2-2v-2z"/></svg>
+          Telefone: 21 5555 6666
+        </span>
+        <span class="flex items-center gap-2 bg-stone-800/50 px-3 py-1.5 rounded-full border border-stone-700/50">
+          <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Email: dfdfdf@dfdff.com
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO PRINCIPAL (CATÁLOGO) -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-6 py-12 w-full space-y-10">
+    
+    <!-- Título da Seção -->
+    <div class="text-center space-y-2 relative pb-4">
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-stone-900 tracking-wide uppercase">
+        Catálogo de Produtos
+      </h2>
+      <div class="w-24 h-1 bg-amber-500 mx-auto rounded-full"></div>
+    </div>
+
+    <div class="space-y-8">
+      
+      <!-- PRODUTO 1 -->
+      <article class="product-card bg-white rounded-2xl p-6 sm:p-8 shadow-md border border-stone-200/80 hover:shadow-xl transition-all duration-300">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          <!-- Esquerda: Imagem do Perfume -->
+          <div class="md:col-span-5 flex justify-center">
+            <div onclick="openLightbox('Perfume Floral Elegance 100ml', 'R$ 289,90', 'Floral Elegance')" class="w-full max-w-[260px] aspect-[4/5] bg-gradient-to-b from-stone-100 to-amber-50/30 rounded-xl border border-stone-200 flex flex-col items-center justify-center p-6 text-center shadow-inner relative group overflow-hidden cursor-zoom-in hover:border-amber-400/80 transition-all duration-300">
+              <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span class="bg-stone-900/80 text-amber-300 text-xs px-3 py-1.5 rounded-full shadow-lg backdrop-blur-sm flex items-center gap-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                  Ampliar foto
+                </span>
+              </div>
+              <svg class="w-20 h-20 text-amber-700/40 mb-3 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+              </svg>
+              <span class="text-xs font-semibold uppercase tracking-wider text-amber-800/70">[Foto do Perfume]</span>
+              <span class="text-[11px] text-stone-400 mt-1">Floral Elegance</span>
+            </div>
+          </div>
+          
+          <!-- Direita: Informações, Preço, Descrição e QR Code -->
+          <div class="md:col-span-7 flex flex-col justify-between space-y-4">
+            <div class="flex flex-wrap justify-between items-start gap-2 border-b border-stone-100 pb-3">
+              <h3 class="font-serif text-2xl font-bold text-stone-900">
+                Perfume Floral Elegance 100ml
+              </h3>
+              <span class="font-bold text-2xl text-amber-600 bg-amber-50 px-3 py-1 rounded-lg border border-amber-200">
+                R$ 289,90
+              </span>
+            </div>
+
+            <!-- Descrição (3 Linhas) -->
+            <div class="text-stone-600 text-sm sm:text-base leading-relaxed space-y-1.5 font-light">
+              <p>Uma fragrância marcante e sofisticada com notas florais raras e um toque suave de baunilha.</p>
+              <p>Ideal para momentos especiais e eventos noturnos onde você deseja se destacar com elegância.</p>
+              <p>Excelente fixação por até 12 horas seguidas com projeção elegante e inesquecível.</p>
+            </div>
+
+            <!-- QR Code -->
+            <div class="pt-3 flex items-center justify-between sm:justify-start sm:gap-4 border-t border-stone-100">
+              <div class="flex items-center gap-3 bg-stone-50 p-2.5 rounded-xl border border-stone-200">
+                <!-- SVG Placeholder para QR Code -->
+                <svg class="w-14 h-14 text-stone-900 bg-white p-1 rounded border border-stone-200" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M2 2h8v8H2V2zm2 2v4h4V4H4zm11-2h7v7h-7V2zm2 2v3h3V4h-3zM2 14h7v8H2v-8zm2 2v4h3v-4H4zm14 3h2v2h-2v-2zm-3-5h2v2h-2v-2zm3 0h3v2h-3v-2zm-3 3h2v2h-2v-2zm5 2h2v3h-2v-3zm-2 1h2v2h-2v-2zm-3 2h3v2h-3v-2z"/>
+                </svg>
+                <div>
+                  <span class="block text-xs font-semibold text-stone-800 uppercase tracking-wider">Código QR</span>
+                  <span class="block text-[11px] text-stone-500">Escaneie para detalhes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRODUTO 2 -->
+      <article class="product-card bg-white rounded-2xl p-6 sm:p-8 shadow-md border border-stone-200/80 hover:shadow-xl transition-all duration-300">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          <div class="md:col-span-5 flex justify-center">
+            <div onclick="openLightbox('Perfume Woody Essence 100ml', 'R$ 319,00', 'Woody Essence')" class="w-full max-w-[260px] aspect-[4/5] bg-gradient-to-b from-stone-100 to-amber-50/30 rounded-xl border border-stone-200 flex flex-col items-center justify-center p-6 text-center shadow-inner relative group overflow-hidden cursor-zoom-in hover:border-amber-400/80 transition-all duration-300">
+              <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span class="bg-stone-900/80 text-amber-300 text-xs px-3 py-1.5 rounded-full shadow-lg backdrop-blur-sm flex items-center gap-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                  Ampliar foto
+                </span>
+              </div>
+              <svg class="w-20 h-20 text-amber-700/40 mb-3 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+              </svg>
+              <span class="text-xs font-semibold uppercase tracking-wider text-amber-800/70">[Foto do Perfume]</span>
+              <span class="text-[11px] text-stone-400 mt-1">Woody Essence</span>
+            </div>
+          </div>
+          
+          <div class="md:col-span-7 flex flex-col justify-between space-y-4">
+            <div class="flex flex-wrap justify-between items-start gap-2 border-b border-stone-100 pb-3">
+              <h3 class="font-serif text-2xl font-bold text-stone-900">
+                Perfume Woody Essence 100ml
+              </h3>
+              <span class="font-bold text-2xl text-amber-600 bg-amber-50 px-3 py-1 rounded-lg border border-amber-200">
+                R$ 319,00
+              </span>
+            </div>
+
+            <div class="text-stone-600 text-sm sm:text-base leading-relaxed space-y-1.5 font-light">
+              <p>Aroma amadeirado intenso com nuances de cedro, sândalo e especiarias refinadas do oriente.</p>
+              <p>Perfeito para homens modernos e determinados que buscam uma presença forte e autêntica.</p>
+              <p>Sua composição proporciona uma sensação de frescor e sofisticação ao longo de todo o dia.</p>
+            </div>
+
+            <div class="pt-3 flex items-center justify-between sm:justify-start sm:gap-4 border-t border-stone-100">
+              <div class="flex items-center gap-3 bg-stone-50 p-2.5 rounded-xl border border-stone-200">
+                <svg class="w-14 h-14 text-stone-900 bg-white p-1 rounded border border-stone-200" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M2 2h8v8H2V2zm2 2v4h4V4H4zm11-2h7v7h-7V2zm2 2v3h3V4h-3zM2 14h7v8H2v-8zm2 2v4h3v-4H4zm14 3h2v2h-2v-2zm-3-5h2v2h-2v-2zm3 0h3v2h-3v-2zm-3 3h2v2h-2v-2zm5 2h2v3h-2v-3zm-2 1h2v2h-2v-2zm-3 2h3v2h-3v-2z"/>
+                </svg>
+                <div>
+                  <span class="block text-xs font-semibold text-stone-800 uppercase tracking-wider">Código QR</span>
+                  <span class="block text-[11px] text-stone-500">Escaneie para detalhes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRODUTO 3 -->
+      <article class="product-card bg-white rounded-2xl p-6 sm:p-8 shadow-md border border-stone-200/80 hover:shadow-xl transition-all duration-300">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          <div class="md:col-span-5 flex justify-center">
+            <div onclick="openLightbox('Perfume Citrus Gold 50ml', 'R$ 199,50', 'Citrus Gold')" class="w-full max-w-[260px] aspect-[4/5] bg-gradient-to-b from-stone-100 to-amber-50/30 rounded-xl border border-stone-200 flex flex-col items-center justify-center p-6 text-center shadow-inner relative group overflow-hidden cursor-zoom-in hover:border-amber-400/80 transition-all duration-300">
+              <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span class="bg-stone-900/80 text-amber-300 text-xs px-3 py-1.5 rounded-full shadow-lg backdrop-blur-sm flex items-center gap-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                  Ampliar foto
+                </span>
+              </div>
+              <svg class="w-20 h-20 text-amber-700/40 mb-3 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+              </svg>
+              <span class="text-xs font-semibold uppercase tracking-wider text-amber-800/70">[Foto do Perfume]</span>
+              <span class="text-[11px] text-stone-400 mt-1">Citrus Gold</span>
+            </div>
+          </div>
+          
+          <div class="md:col-span-7 flex flex-col justify-between space-y-4">
+            <div class="flex flex-wrap justify-between items-start gap-2 border-b border-stone-100 pb-3">
+              <h3 class="font-serif text-2xl font-bold text-stone-900">
+                Perfume Citrus Gold 50ml
+              </h3>
+              <span class="font-bold text-2xl text-amber-600 bg-amber-50 px-3 py-1 rounded-lg border border-amber-200">
+                R$ 199,50
+              </span>
+            </div>
+
+            <div class="text-stone-600 text-sm sm:text-base leading-relaxed space-y-1.5 font-light">
+              <p>Notas cítricas vibrantes combinadas com bergamota fresca e acordes oceânicos energizantes.</p>
+              <p>Uma escolha leve e refrescante para o uso diário, trabalho ou dias ensolarados de Verão.</p>
+              <p>Traz sensação imediata de bem-estar, energia e vitalidade em cada borrifada.</p>
+            </div>
+
+            <div class="pt-3 flex items-center justify-between sm:justify-start sm:gap-4 border-t border-stone-100">
+              <div class="flex items-center gap-3 bg-stone-50 p-2.5 rounded-xl border border-stone-200">
+                <svg class="w-14 h-14 text-stone-900 bg-white p-1 rounded border border-stone-200" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M2 2h8v8H2V2zm2 2v4h4V4H4zm11-2h7v7h-7V2zm2 2v3h3V4h-3zM2 14h7v8H2v-8zm2 2v4h3v-4H4zm14 3h2v2h-2v-2zm-3-5h2v2h-2v-2zm3 0h3v2h-3v-2zm-3 3h2v2h-2v-2zm5 2h2v3h-2v-3zm-2 1h2v2h-2v-2zm-3 2h3v2h-3v-2z"/>
+                </svg>
+                <div>
+                  <span class="block text-xs font-semibold text-stone-800 uppercase tracking-wider">Código QR</span>
+                  <span class="block text-[11px] text-stone-500">Escaneie para detalhes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRODUTO 4 -->
+      <article class="product-card bg-white rounded-2xl p-6 sm:p-8 shadow-md border border-stone-200/80 hover:shadow-xl transition-all duration-300">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          <div class="md:col-span-5 flex justify-center">
+            <div onclick="openLightbox('Perfume Velvet Rose 100ml', 'R$ 349,90', 'Velvet Rose')" class="w-full max-w-[260px] aspect-[4/5] bg-gradient-to-b from-stone-100 to-amber-50/30 rounded-xl border border-stone-200 flex flex-col items-center justify-center p-6 text-center shadow-inner relative group overflow-hidden cursor-zoom-in hover:border-amber-400/80 transition-all duration-300">
+              <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span class="bg-stone-900/80 text-amber-300 text-xs px-3 py-1.5 rounded-full shadow-lg backdrop-blur-sm flex items-center gap-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                  Ampliar foto
+                </span>
+              </div>
+              <svg class="w-20 h-20 text-amber-700/40 mb-3 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+              </svg>
+              <span class="text-xs font-semibold uppercase tracking-wider text-amber-800/70">[Foto do Perfume]</span>
+              <span class="text-[11px] text-stone-400 mt-1">Velvet Rose</span>
+            </div>
+          </div>
+          
+          <div class="md:col-span-7 flex flex-col justify-between space-y-4">
+            <div class="flex flex-wrap justify-between items-start gap-2 border-b border-stone-100 pb-3">
+              <h3 class="font-serif text-2xl font-bold text-stone-900">
+                Perfume Velvet Rose 100ml
+              </h3>
+              <span class="font-bold text-2xl text-amber-600 bg-amber-50 px-3 py-1 rounded-lg border border-amber-200">
+                R$ 349,90
+              </span>
+            </div>
+
+            <div class="text-stone-600 text-sm sm:text-base leading-relaxed space-y-1.5 font-light">
+              <p>A essência luxuosa de pétalas de rosa vermelha entrelaçada com ambreta e notas místicas.</p>
+              <p>Desenvolvido para criar uma aura envolvente, romântica e extremamente sedutora.</p>
+              <p>Embalagem sofisticada que reflete a nobreza e delicadeza dos seus ingredientes nobres.</p>
+            </div>
+
+            <div class="pt-3 flex items-center justify-between sm:justify-start sm:gap-4 border-t border-stone-100">
+              <div class="flex items-center gap-3 bg-stone-50 p-2.5 rounded-xl border border-stone-200">
+                <svg class="w-14 h-14 text-stone-900 bg-white p-1 rounded border border-stone-200" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M2 2h8v8H2V2zm2 2v4h4V4H4zm11-2h7v7h-7V2zm2 2v3h3V4h-3zM2 14h7v8H2v-8zm2 2v4h3v-4H4zm14 3h2v2h-2v-2zm-3-5h2v2h-2v-2zm3 0h3v2h-3v-2zm-3 3h2v2h-2v-2zm5 2h2v3h-2v-3zm-2 1h2v2h-2v-2zm-3 2h3v2h-3v-2z"/>
+                </svg>
+                <div>
+                  <span class="block text-xs font-semibold text-stone-800 uppercase tracking-wider">Código QR</span>
+                  <span class="block text-[11px] text-stone-500">Escaneie para detalhes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- PRODUTO 5 -->
+      <article class="product-card bg-white rounded-2xl p-6 sm:p-8 shadow-md border border-stone-200/80 hover:shadow-xl transition-all duration-300">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+          <div class="md:col-span-5 flex justify-center">
+            <div onclick="openLightbox('Perfume Night Mystery 100ml', 'R$ 279,00', 'Night Mystery')" class="w-full max-w-[260px] aspect-[4/5] bg-gradient-to-b from-stone-100 to-amber-50/30 rounded-xl border border-stone-200 flex flex-col items-center justify-center p-6 text-center shadow-inner relative group overflow-hidden cursor-zoom-in hover:border-amber-400/80 transition-all duration-300">
+              <div class="absolute inset-0 bg-amber-500/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                <span class="bg-stone-900/80 text-amber-300 text-xs px-3 py-1.5 rounded-full shadow-lg backdrop-blur-sm flex items-center gap-1.5 transform translate-y-2 group-hover:translate-y-0 transition-transform">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                  Ampliar foto
+                </span>
+              </div>
+              <svg class="w-20 h-20 text-amber-700/40 mb-3 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+              </svg>
+              <span class="text-xs font-semibold uppercase tracking-wider text-amber-800/70">[Foto do Perfume]</span>
+              <span class="text-[11px] text-stone-400 mt-1">Night Mystery</span>
+            </div>
+          </div>
+          
+          <div class="md:col-span-7 flex flex-col justify-between space-y-4">
+            <div class="flex flex-wrap justify-between items-start gap-2 border-b border-stone-100 pb-3">
+              <h3 class="font-serif text-2xl font-bold text-stone-900">
+                Perfume Night Mystery 100ml
+              </h3>
+              <span class="font-bold text-2xl text-amber-600 bg-amber-50 px-3 py-1 rounded-lg border border-amber-200">
+                R$ 279,00
+              </span>
+            </div>
+
+            <div class="text-stone-600 text-sm sm:text-base leading-relaxed space-y-1.5 font-light">
+              <p>Uma combinação misteriosa de âmbar denso, pimenta preta e fava tonka de alta pureza.</p>
+              <p>Destinado a quem aprecia perfumes intensos, enigmáticos e com rastro inconfundível.</p>
+              <p>Uma experiência olfativa única que conquista elogios em qualquer ocasião noturna.</p>
+            </div>
+
+            <div class="pt-3 flex items-center justify-between sm:justify-start sm:gap-4 border-t border-stone-100">
+              <div class="flex items-center gap-3 bg-stone-50 p-2.5 rounded-xl border border-stone-200">
+                <svg class="w-14 h-14 text-stone-900 bg-white p-1 rounded border border-stone-200" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M2 2h8v8H2V2zm2 2v4h4V4H4zm11-2h7v7h-7V2zm2 2v3h3V4h-3zM2 14h7v8H2v-8zm2 2v4h3v-4H4zm14 3h2v2h-2v-2zm-3-5h2v2h-2v-2zm3 0h3v2h-3v-2zm-3 3h2v2h-2v-2zm5 2h2v3h-2v-3zm-2 1h2v2h-2v-2zm-3 2h3v2h-3v-2z"/>
+                </svg>
+                <div>
+                  <span class="block text-xs font-semibold text-stone-800 uppercase tracking-wider">Código QR</span>
+                  <span class="block text-[11px] text-stone-500">Escaneie para detalhes</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </main>
+
+  <!-- RODAPÉ (FOOTER) -->
+  <footer class="bg-stone-950 text-stone-300 border-t border-amber-600/20 mt-16 py-10">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-4">
+      <div class="flex flex-wrap justify-center items-center gap-4 text-xs sm:text-sm text-stone-300">
+        <span class="flex items-center gap-2 bg-stone-900 px-4 py-2 rounded-full border border-stone-800">
+          <svg class="w-4 h-4 text-emerald-500" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Telefone (ZAP): 21 5454 3454
+        </span>
+        <span class="hidden sm:inline text-stone-700">•</span>
+        <span class="flex items-center gap-2 bg-stone-900 px-4 py-2 rounded-full border border-stone-800">
+          <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+          Email: sfgfdgfg@sdfsdf.com
+        </span>
+      </div>
+      
+      <p class="text-xs text-stone-500 italic pt-2">
+        dfsd dfjdsjllk dfk dfljkdkf dfdfkj
+      </p>
+      
+      <p class="text-[11px] text-stone-600 pt-4 border-t border-stone-900">
+        &copy; Perfumes XPTO - Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+
+  <!-- MODAL LIGHTBOX INTERATIVO -->
+  <div id="lightbox-modal" onclick="closeLightboxOnBackdrop(event)" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-950/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300 ease-out no-print">
+    
+    <!-- Botão Fechar (X) -->
+    <button onclick="closeLightbox()" class="absolute top-5 right-5 text-stone-400 hover:text-white bg-stone-900/80 hover:bg-amber-600 p-2.5 rounded-full shadow-lg border border-stone-700 transition-all duration-200 z-10 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+
+    <!-- Conteúdo do Modal com Efeito Scale/Spring -->
+    <div id="lightbox-card" class="bg-gradient-to-b from-stone-900 via-stone-900 to-stone-950 border border-amber-500/30 rounded-2xl max-w-lg w-full p-6 sm:p-8 shadow-2xl shadow-amber-950/50 transform scale-90 transition-all duration-300 ease-out text-center relative overflow-hidden">
+      
+      <div class="absolute -top-24 -right-24 w-48 h-48 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <!-- Container da Foto Ampliada -->
+      <div class="w-full aspect-[4/5] max-h-[360px] bg-gradient-to-b from-stone-800 to-stone-900 rounded-xl border border-stone-700/80 flex flex-col items-center justify-center p-8 shadow-inner mb-6 relative group mx-auto">
+        <svg class="w-28 h-28 text-amber-400/80 animate-pulse mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+        </svg>
+        <span class="text-xs font-semibold uppercase tracking-widest text-amber-300/80">[Foto Ampliada do Perfume]</span>
+        <span id="lightbox-subtitle" class="text-xs text-stone-400 mt-1"></span>
+      </div>
+
+      <!-- Informações do Perfume -->
+      <h3 id="lightbox-title" class="font-serif text-2xl font-bold text-amber-100 mb-2"></h3>
+      <div class="inline-block bg-amber-500/10 border border-amber-500/30 text-amber-400 px-4 py-1.5 rounded-full font-bold text-xl shadow-sm mb-4" id="lightbox-price"></div>
+      
+      <p class="text-xs text-stone-400 italic">Pressione ESC ou clique fora para fechar</p>
+    </div>
+
+  </div>
+
+  <!-- SCRIPT VANILLA JAVASCRIPT PARA GERENCIAR MODAL -->
+  <script>
+    const modal = document.getElementById('lightbox-modal');
+    const card = document.getElementById('lightbox-card');
+    const titleEl = document.getElementById('lightbox-title');
+    const priceEl = document.getElementById('lightbox-price');
+    const subtitleEl = document.getElementById('lightbox-subtitle');
+
+    function openLightbox(title, price, subtitle) {
+      titleEl.innerText = title;
+      priceEl.innerText = price;
+      subtitleEl.innerText = subtitle;
+
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100');
+
+      setTimeout(() => {
+        card.classList.remove('scale-90');
+        card.classList.add('scale-100');
+      }, 10);
+
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      card.classList.remove('scale-100');
+      card.classList.add('scale-90');
+
+      setTimeout(() => {
+        modal.classList.remove('opacity-100');
+        modal.classList.add('opacity-0', 'pointer-events-none');
+        document.body.style.overflow = '';
+      }, 150);
+    }
+
+    function closeLightboxOnBackdrop(e) {
+      if (e.target === modal) {
+        closeLightbox();
+      }
+    }
+
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && !modal.classList.contains('opacity-0')) {
+        closeLightbox();
+      }
+    });
+  </script>
+
+</body>
+</html>
